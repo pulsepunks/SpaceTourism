@@ -1,0 +1,739 @@
+@import "_slick";
+@import "_nullstyle";
+@import "_ibg";
+@import "_fonts";
+
+
+//=================================================================
+.container{
+      max-width: 1220px;
+      padding: 0 10px;
+      margin: 0 auto;
+}
+
+body{
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+}
+
+.btn {
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      border: 1px solid #FFFFFF;
+      color: #FFFFFF;
+      padding: 15px 0 16px ;
+      display: inline-block;
+      text-align: center;
+      transition: all .5s ease-out;
+      &:hover{
+            background-color: #ffffff21;
+      }
+}
+
+
+//=================================================================
+//===============================HEADER============================
+//=================================================================
+
+.header {
+
+      background-image: url('../img/header/background.jpg');
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+		&_phone {
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            margin-left: auto;
+            transition: color .5s;
+            &:hover{
+                color: #CB0E0E;
+            }
+		}
+
+		&__inner {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+		}
+
+		&__top {
+            padding: 80px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+		}
+
+		&__login {
+            margin-right: 134px;
+            margin-left: 22px;
+            border: none;
+            background-color: transparent;
+		}
+
+		&__content {
+            align-self: flex-start;
+            max-width: 600px;
+            text-align: center;
+		}
+
+		&__title {
+	        font-family: 'Space Age Cyrillic';
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 15px;
+
+            & span{
+                font-size: 110px;
+                line-height: 110px;
+            }
+		}
+
+		&__subtitle {
+            font-family: 'SF Pro Display';
+            font-size: 24px;
+            line-height: 29px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 49px;
+		}
+
+
+		&__btn {
+            width: 100%;
+		}
+
+		&__description {
+            align-self: flex-end;
+            margin-bottom: 150px;
+            display: flex;
+		}
+
+		&__descriptio-text {
+            max-width: 165px;
+            &:last-child{
+                margin-left: 52px;
+            }
+		}
+}
+
+.menu {
+
+		&__list {
+            list-style: none;
+            color: #fff;
+            display: flex;
+		}
+
+		&__item {
+            margin-right: 30px;
+		}
+
+		&__link {
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            transition: color .5s;
+            &:hover{
+                color: #CB0E0E;
+            }
+		}
+}
+
+//=================================================================
+//======================ABOUT======================================
+//=================================================================
+
+.about {
+    background-image: url('../img/about/background.jpg');
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+		&__inner {
+            padding: 100px 0;
+		}
+
+		&__title {
+            font-family: 'Space Age Cyrillic';
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 100px;
+		}
+
+		&__info {
+            display: flex;
+            margin: 50px -50px 100px -50px;
+		}
+
+		&__image {
+            margin: 0 50px;
+		}
+
+
+		&__description {
+            margin: 0 -5px;
+		}
+}
+
+.description {
+
+		&__title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 5px;
+		}
+
+		&__subtitle {
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: #036CCA;
+            margin-bottom: 31px;
+		}
+
+		&__info {
+            display: flex;
+            margin: 0 25px;
+            margin-bottom: 50px;
+		}
+
+		&__text {
+            margin: 0 25px;
+            font-size: 16px;
+            line-height: 19px;
+		}
+
+		&__btn {
+            padding: 20px 44px;
+            font-size: 18px;
+            line-height: 21px;
+		}
+}
+
+.about__info--modify{
+    flex-direction: row-reverse;
+
+}
+
+.about {
+
+		&__table {
+                  border-collapse: collapse;
+                  width: 100%;
+                  margin-bottom: 50px;
+		}
+
+		&__table-tr {
+                  border: 1px solid #FFFFFF;
+                  border-left: none;
+                  border-right: none;
+
+		}
+
+            &__table-tr + &__table-tr {
+                  font-size: 36px;
+                  line-height: 43px;
+                  font-weight: bold;
+                  text-align: center;
+		}
+
+		&__table-td {
+                  padding: 10px 30px 10px 0;
+                  text-align: center;
+		}
+
+            &__table-td span{
+                  font-size: 14px;
+                  line-height: 17px;
+                  display: block;
+		}
+
+            &__table-caption{
+                  caption-side: bottom;
+                  text-align: left;
+                  margin-top: 20px;
+                  font-size: 12px;
+                  line-height: 14px;
+
+            }
+
+}
+
+
+//=================================================================
+//==================================HOW============================
+//=================================================================
+
+.how {
+    background-image: url('../img/how/background.jpg');
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+		&__inner {
+            padding: 100px 0;
+		}
+
+		&__title {
+            font-family: 'Space Age Cyrillic';
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 100px;
+		}
+
+            &__box{
+                  text-align: center;
+                  & circle, text, foreignObject{
+                        cursor: pointer;
+                        transition: all 0.5s ease-in-out;
+                        font-size: 18px;
+                        text-align: left;
+                  }
+                  & g:hover circle{
+                        r: 20px;
+                        fill: #036CCA;
+                  }
+                  & g:hover text{
+                        font-size: 22px;
+                        line-height: 26px;
+                        fill: #036CCA;
+                  }
+                  & g:hover foreignObject{
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #036CCA;
+                  }
+            }
+}
+
+//=================================================================
+//============================BOOKING==============================
+//=================================================================
+
+.booking {
+
+    background-image: url('../img/booking/background.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+		&__inner {
+            padding: 100px 0;
+            display: flex;
+            justify-content: space-between;
+		}
+
+		&__title {
+            font-family: 'Space Age Cyrillic';
+            font-size: 48px;
+            line-height: 48px;
+
+		}
+
+		&__info {
+            display: flex;
+            margin: 0px -25px;
+		}
+
+		&__text {
+            max-width: 165px;
+            margin: 0px 25px;
+            font-size: 14px;
+            line-height: 17px;
+		}
+}
+
+//=================================================================
+//==============================SERVICES===========================
+//=================================================================
+
+
+
+.offer {
+
+		&__inner {
+            padding: 100px 0;
+		}
+
+		&__title {
+            font-family: 'Space Age Cyrillic';
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 100px;
+		}
+
+		&__items {
+            display: flex;
+            margin: 0 -100px;
+		}
+
+		&__item {
+            margin: 0 100px;
+            max-width: 500px;
+		}
+
+		&__info {
+            padding: 40px 130px;
+            border: 1px solid #FFFFFF;
+            text-align: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 25px;
+		}
+
+		&__text {
+            font-size: 24px;
+            line-height: 29px;
+            & span{
+                  color: #CB0E0E;
+            }
+		}
+
+      &__price-old{
+            font-size: 14px;
+            line-height: 17px;
+            position: relative;
+            width: 70px;
+            height: 20px;
+            margin-top: auto;
+            margin-bottom: 15px;
+            right: -80px;
+            align-self: flex-end;
+            &::before{
+                  content: '';
+                  position: absolute;
+                  width: 60px;
+                  height: 1px;
+                  background-color: #CB0E0E;
+                  transform: rotate(20deg);
+                  top: 7px;
+                  left: 5px;
+            }
+
+      }
+
+      &__price {
+            width: 270px;
+            font-size: 48px;
+            line-height: 57px;
+            text-align: center;
+		}
+
+		&__btn {
+            width: 100%;
+		}
+}
+
+
+.services {
+
+      background-image: url('../img/services/background.jpg');
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      padding-bottom: 100px;
+
+		&__inner {
+            padding: 50px 0px 100px 0px;
+		}
+
+		&__title {
+            font-family: 'Space Age Cyrillic';
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 100px;
+		}
+
+		&__info {
+            display: flex;
+            margin: 0 -40px;
+            justify-content: space-between;
+		}
+
+		&__description {
+            margin: 0 40px;
+		}
+
+		&__list-title {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 25px;
+		}
+
+		&__list {
+            margin-bottom: 25px;
+		}
+
+		&__item {
+            font-size: 24px;
+            line-height: 29px;
+            padding-left: 30px;
+            position: relative;
+            &::before{
+                  position: absolute;
+                  content: '';
+                  width: 20px;
+                  height: 20px;
+                  background-color: #FFFFFF;
+                  border-radius: 50%;
+                  top: 6px;
+                  left: 0px;
+            }
+		}
+
+		&__list-subtitle {
+            font-size: 12px;
+            line-height: 14px;
+            color: #E5E5E5;
+		}
+
+		&__link {
+            margin: 0 40px;
+            width: 500px;
+		}
+
+		&__btn {
+            width: 100%;
+            padding: 20px 0;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 50px;
+            position: relative;
+            &:last-child{
+                  margin-bottom: 0px;
+            }
+            &:first-child::after{
+                  content: "";
+                  position: absolute;
+                  width: 192px;
+                  height: 150px;
+                  background-color: transparent;
+                  background-image: url("../img/services/1.png");
+                  top: -129px;
+                  left: 316px;
+            }
+		}
+}
+
+//=================================================================
+//==============================SLIDER=============================
+//=================================================================
+
+.slider {
+
+            &__inner {
+            padding: 100px 0px 50px 0px;
+		}
+
+		&__box {
+                  border: 1px solid #E5E5E5;
+                  padding: 80px 75px;
+                  text-align: center;
+		}
+
+
+		&__image {
+            margin: 0 auto;
+		}
+
+            &__description{
+                  text-align: center;
+                  font-family: 'Space Age Cyrillic';
+                  font-size: 24px;
+                  line-height: 30px;
+                  color: #FFFFFF;
+            }
+            &__arrow{
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  z-index: 100;
+            }
+            &__arrow-prev{
+                  left: 75px;
+            }
+            &__arrow-next{
+                  right: 75px;
+            }
+}
+
+//=================================================================
+//===========================CONTACTS==============================
+//=================================================================
+
+.contacts {
+
+    background: url("../img/contacts/background.jpg");
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+		&__inner {
+            padding: 100px 0;
+            margin: 0 -50px;
+            display: flex;
+		}
+
+		&__info {
+            margin: 0 50px;
+            max-width: 510px;
+		}
+
+		&__title {
+            font-family: 'Space Age Cyrillic';
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 46px;
+		}
+
+		&__text {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 90px;
+		}
+
+		&__form {
+            display: flex;
+            flex-direction: column;
+		}
+
+		&__input {
+            border-bottom: 1px solid #FFFFFF;
+            margin-bottom: 50px;
+            width: 100%;
+            background-color: transparent;
+            height: 60px;
+            padding: 20px 10px;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            &::placeholder{
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+		}
+
+		&__btn {
+            width: 100%;
+            background-color: transparent;
+		}
+
+		&__varanty {
+            margin: 0 50px;
+            max-width: 600px;
+		}
+
+		&__image {
+            max-width: 396px;
+            margin-left: auto;
+		}
+
+
+}
+
+
+//=================================================================
+//=============================FOOTER==============================
+//=================================================================
+
+.footer {
+    background-image: url("../img/footer/background.jpg");
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+		&__inner {
+            display: flex;
+            padding: 100px 0px;
+		}
+
+		&__info {
+            margin: 0 50px 0 auto;
+		}
+
+		&__text {
+            margin-bottom: 50px;
+            width: 165px;
+		}
+
+		&__menu {
+            margin: 0 50px;
+		}
+
+		&__list {
+            list-style: none;
+
+		}
+
+		&__list-item {
+            margin-bottom: 20px;
+            width: 165px;
+		}
+
+		&__list-link {
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            transition: color .5s;
+            &:hover{
+                color: #CB0E0E;
+            }
+		}
+
+		&__links {
+            margin: 0 50px;
+		}
+
+		&__contacts {
+            list-style: none;
+		}
+
+		&__item {
+            margin-bottom: 20px;
+            width: 165px;
+		}
+
+		&__link {
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            transition: color .5s;
+            text-transform: uppercase;
+            &:hover{
+                color: #CB0E0E;
+            }
+		}
+}
+
+
+
+
+
+
+
+
+
+//=================================================================
+@import "_media";
